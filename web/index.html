@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="icon" type="imagem/png" href="../figuras/logo-escura.png" />
+        <title>Projeto Noma</title>
+
+        <!-- Frameworks de terceiros -->
+        <script src="../frameworks/js/jquery.js"></script>
+        <script src="../frameworks/js/popper.js"></script>
+        <script src="../frameworks/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../frameworks/css/bootstrap.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../frameworks/fontawesome/css/all.css" crossorigin="anonymous" />
+
+        <!-- Arquivos próprios -->
+        <link rel="stylesheet" href="../estilos/estilos-elementos.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../estilos/estilos-posicionamento.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../estilos/estilos-texto.css" crossorigin="anonymous" />
+    </head>
+
+    <body class="fundo-conteudo">
+
+        <!-- Barra superior de tarefas -->
+        <div class="container-fluid fundo-barra">
+            <div class="row pad-barra">
+                <div class="col-2 flex-centro">
+                    <img src="../figuras/logo-clara.png" width="40" />
+                </div>
+                <div class="col-5 flex-centro centro">
+                    <span onclick="passar('historia')" class="item-barra botao item-barra-ativo">HISTÓRIA</span>
+                </div>
+                <div class="col-5 flex-centro centro">
+                    <span onclick="passar('projetos')" class="item-barra botao">PROJETOS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteúdo da página -->
+        <div class="container margem-sup-hist caixa-historia">
+            <div class="row">
+                <div class="col-12 texto-historia">
+                    <p>Olá visitante, estou muito feliz com a sua presença. Poderia me conceder alguns minutos de prosa, para conhecer mais sobre o Projeto Noma? Eu juro que tentarei ser o mais breve possível. Vamos?</p>
+                    <p>Eu sempre acreditei que o conhecimento é algo universal, que deve ser acessível por todos. Para mim, só crescemos como espécie se deixarmos como legado para as próximas gerações, tudo aquilo que desbravamos durante nossas vidas. Acha filosófico? É, talvez concorde que seja um tanto utópico... Mas sabe de uma coisa? Eu acredito nessa utopia.</p>
+                    <p>Nosso conhecimento não é individual. Hoje, em 2019, nos preocupamos bastante em garantir que aqueles que vieram antes sejam reconhecidos. Porém, sinto que não nos esforçamos o suficiente para que aqueles que irão vir depois, possam gozar dos nossos avanços. Ego, inveja, mesquinhez... Não sei ao certo o porquê, mas algumas pessoas preferem restringir o conhecimento delas, impondo dificuldades para que outros possam acessá-los. Não somos todos da mesma espécie? Por que tratar uns como merecedores e outros não?</p>
+                    <p>Tá, eu sei que disse que seria breve, então vou resumir a partir daqui. O Projeto Noma é um sonho, a vontade de levar para todos os que desejarem, todo o conhecimentos e todas as ferramentas que eu possuo. Simples assim, quem quiser, terá acesso por meio deste site. Ok, agora você deve estar com o seguinte pensamento: "isso, além de se loucura, é impossível". Talvez seja realmente complicado manter a esse site, com todo esse conteúdo livre. Porém, vou te contar algo sobre mim: eu não vou desistir sem tentar.</p>
+                    <p>Sim, isso é tudo por enquanto. Aguardo você nos projetos, conteúdos e ferramentas disponíveis na Noma. Se desejar, conte-me o que achou e sugira melhorias e novas coisas. Lembre-se, tudo aqui também é seu, por isso, sinta-se em casa. Até breve!</p>
+                    <p class="texto-assinatura">Bruno, o Pato</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+        function passar(pagina) {
+            if(pagina == 'historia') {
+                window.location.href = './index.html';
+            } else if(pagina == 'projetos') {
+                window.location.href = './projetos.html';
+            }
+        }
+    </script>
+
+</html>

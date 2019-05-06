@@ -1,0 +1,13 @@
+/* Caixa de centralização total */
+.flex-centro { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+
+/* Espaçamentos */
+.margem-simples { margin: 0 10px 0 10px; }
+.pad-barra { padding: 10px 0 10px 0; }
+.margem-sup-hist { margin-top: 50px; }
+
+/* Caixas de tamanho */
+.altura-100 { height: 100vh; }
+
+/* Alinhamento vertical */
+.centro { text-align: center; }

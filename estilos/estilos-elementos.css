@@ -1,0 +1,38 @@
+/* Cores de fundo */
+.fundo-apresentacao { background-color: rgb(64,33,110); }
+.fundo-barra { background-color: rgb(37,30,34); }
+.fundo-conteudo { background-color: rgb(128,153,210); }
+.fundo-modal-descricao { background-color: rgb(228,228,228); }
+
+/* Cores de fontes */
+.fonte-branca { color: rgb(255,255,255); }
+.texto-historia { color: rgb(37,30,33); }
+.texto-projeto { color: rgb(37,30,33); }
+.texto-icone-projeto { color: rgb(0,0,0); }
+.item-barra { color: rgb(194,23,125); }
+.item-barra-ativo { color: rgb(207,23,122); text-decoration: underline; }
+
+/* Largura de elementos */
+.caixa-historia { max-width: 800px; }
+
+/* Elementos clicáveis */
+.botao { cursor: pointer; }
+.botao-enfoque:hover { transform: scale(1.1); }
+.botao-acesso { color: rgb(207,23,122); background-color: rgb(37,30,33); }
+
+/* Imagens */
+.logo-apresentacao { width: 120px; }
+.logo-icone { width: 30px; }
+
+/* Responsividade */
+@media(max-width: 600px) {
+    .logo-apresentacao { width: 100px; }
+    .logo-icone { width: 25px; }
+}
+@media(max-width: 400px) {
+    .logo-apresentacao { width: 80px; }
+    .logo-icone { width: 22px; }
+}
+@media(max-width: 300px) {
+    .logo-apresentacao { width: 60px; }
+}

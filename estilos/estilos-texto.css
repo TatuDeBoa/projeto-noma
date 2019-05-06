@@ -1,0 +1,47 @@
+/* Fontes externas */
+@font-face { font-family: noto; src: url('../fontes/NotoSans-Regular.ttf'); }
+@font-face { font-family: roboto; src: url('../fontes/RobotoSlab-Regular.ttf'); }
+
+/* Títulos */
+.titulo-apresentacao { font-size: 60px; font-family: roboto; }
+.item-barra { font-size: 20px; font-family: roboto; }
+.texto-assinatura { font-size: 20px; font-family: roboto; text-align: right; }
+.texto-icone-projeto { font-size: 22px; font-family: roboto; margin-bottom: 15px; }
+.texto-titulo-projeto { font-size: 25px; font-family: roboto; }
+
+/* Parágrafos */
+.subtitulo-apresentacao { font-size: 20px; font-family: noto; }
+.texto-historia { font-size: 20px; font-family: noto; text-align: justify; }
+.texto-projeto { font-size: 20px; font-family: noto; text-align: justify; }
+.texto-descricao-projeto { font-size: 18px; font-family: noto; text-align: justify; }
+
+/* Responsividade */
+@media(max-width: 800px) {
+    .item-barra { font-size: 18px; }
+    .texto-historia { font-size: 17px; }
+    .texto-descricao-projeto { font-size: 17px; }
+}
+@media(max-width: 600px) {
+    .titulo-apresentacao { font-size: 50px; }
+    .subtitulo-apresentacao { font-size: 17px; font-family: noto; }
+    .item-barra { font-size: 16px; }
+    .texto-historia { font-size: 16px; }
+    .texto-projeto { font-size: 16px; }
+    .texto-icone-projeto { font-size: 18px; }
+    .texto-descricao-projeto { font-size: 16px; }
+}
+@media(max-width: 450px) {
+    .titulo-apresentacao { font-size: 40px; }
+    .subtitulo-apresentacao { font-size: 15px; font-family: noto; }
+    .item-barra { font-size: 14px; }
+    .texto-historia { font-size: 14px; }
+    .texto-projeto { font-size: 15px; }
+    .texto-icone-projeto { font-size: 17px; }
+    .texto-titulo-projeto { font-size: 20px; }
+    .texto-descricao-projeto { font-size: 15px; }
+}
+@media(max-width: 300px) {
+    .titulo-apresentacao { font-size: 30px; }
+    .subtitulo-apresentacao { font-size: 13px; font-family: noto; }
+    .texto-descricao-projeto { font-size: 14px; }
+}

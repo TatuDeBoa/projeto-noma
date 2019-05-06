@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="icon" type="imagem/png" href="../figuras/logo-escura.png" />
+        <title>Projeto Noma</title>
+
+        <!-- Frameworks de terceiros -->
+        <script src="../frameworks/js/jquery.js"></script>
+        <script src="../frameworks/js/popper.js"></script>
+        <script src="../frameworks/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="../frameworks/css/bootstrap.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../frameworks/fontawesome/css/all.css" crossorigin="anonymous" />
+
+        <!-- Arquivos próprios -->
+        <link rel="stylesheet" href="../estilos/estilos-elementos.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../estilos/estilos-posicionamento.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="../estilos/estilos-texto.css" crossorigin="anonymous" />
+        <script src="./projetos.js"></script>
+    </head>
+
+    <body class="fundo-conteudo">
+
+        <!-- Barra superior de tarefas -->
+        <div class="container-fluid fundo-barra">
+            <div class="row pad-barra">
+                <div class="col-2 flex-centro">
+                    <img src="../figuras/logo-clara.png" width="40" />
+                </div>
+                <div class="col-5 flex-centro centro">
+                    <span onclick="passar('historia')" class="item-barra botao">HISTÓRIA</span>
+                </div>
+                <div class="col-5 flex-centro centro">
+                    <span onclick="passar('projetos')" class="item-barra item-barra-ativo botao">PROJETOS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteúdo da página -->
+        <div class="container margem-sup-hist caixa-historia">
+            <div class="row">
+                <div class="col-12">
+                    <p class="texto-projeto">Aqui embaixo tem a lista dos nossos projetos e ferramentas disponíveis. Clique em um e uma janela será aberta. Nela, você terá mais informações e o link para acesso da página em específico.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 flex-centro">
+                    <span class="texto-icone-projeto botao" onclick="abrirModal('bravo')"><img src="../figuras/logo-clara.png" class="logo-icone" /> Bravo</span>
+                    <span class="texto-icone-projeto botao" onclick="abrirModal('priore')"><img src="../figuras/logo-clara.png" class="logo-icone" /> Priore</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de informações -->
+        <div class="modal" tabindex="-1" role="dialog" id="modalInformacoes">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content fundo-modal-descricao">
+                    <div class="modal-header">
+                        <h2 class="texto-titulo-projeto" id="nomeProjeto"></h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body texto-descricao-projeto">
+                        <p id="descricaoProjeto"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn botao-acesso botao-enfoque texto-projeto">Acessar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
